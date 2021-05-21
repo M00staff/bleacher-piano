@@ -1,24 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import { Fragment } from 'react';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <div className="keyWrapper">
+        <button className="keyC">C</button>
+        <button className="keyD">D</button>
+        <button className="keyE">E</button>
+        <button className="keyF">F</button>
+        <button className="keyG">G</button>
+        <button className="keyA">A</button>
+        <button className="keyB">B</button>
+      </div>
+    </Fragment>
   );
 }
 
