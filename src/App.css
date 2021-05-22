@@ -1,6 +1,6 @@
 .keyWrapper {
-  height: 5em;
-  width: 20em;
+  height: 10em;
+  width: fit-content;
   display: block;
   margin-right: auto;
   margin-left: auto;
@@ -15,4 +15,21 @@ button {
   transition: 0.5s ease-out;
   font-family: "Arial Black", Gadget, sans-serif;
   height: 100%;
+}
+
+.notes {
+  border: solid 2px grey;
+  background-color: aliceblue;
+  display: block;
+  margin: 1em;
+  border-radius: 20px;
+  /* cursor: pointer; */
+  padding: 1em;
+  transition: 0.5s ease-out;
+  font-family: "Arial Black", Gadget, sans-serif;
+}
+
+.controlsWrapper {
+  display: flex;
+  justify-content: space-between;
 }
