@@ -6,15 +6,18 @@
   margin-left: auto;
 }
 
-button {
+.keyButton {
   border: solid 2px grey;
   background-color: aliceblue;
-  border-radius: 20px;
+  border-radius: 10px;
   cursor: pointer;
   padding: 1em;
-  transition: 0.5s ease-out;
   font-family: "Arial Black", Gadget, sans-serif;
   height: 100%;
+}
+
+.clickedButton {
+  animation: buttonClick 2s linear;
 }
 
 .notes {
@@ -23,13 +26,15 @@ button {
   display: block;
   margin: 1em;
   border-radius: 20px;
-  /* cursor: pointer; */
   padding: 1em;
-  transition: 0.5s ease-out;
   font-family: "Arial Black", Gadget, sans-serif;
 }
 
 .controlsWrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+@keyframes buttonClick {
+  0%   {background-color:white;}
 }
