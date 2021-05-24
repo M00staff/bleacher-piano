@@ -9,7 +9,6 @@
 .keyButton {
   border: solid 2px grey;
   background-color: aliceblue;
-  border-radius: 10px;
   cursor: pointer;
   padding: 1em;
   font-family: "Arial Black", Gadget, sans-serif;
@@ -53,4 +52,34 @@
   border-color: red;
   background-color: red;
   cursor: pointer;
+}
+
+.black-keys {
+  position: absolute;
+  left: 85%;
+  height:3em;
+  background:#333;
+  background:-webkit-linear-gradient(-20deg,#333,#000,#333);
+  background:-moz-linear-gradient(-20deg,#333,#000,#333);
+  background:-ms-linear-gradient(-20deg,#333,#000,#333);
+  background:-o-linear-gradient(-20deg,#333,#000,#333);
+  background:linear-gradient(-20deg,#333,#000,#333);
+  z-index:10;
+  border-width:1px 2px 7px;
+  border-style:solid;
+  border-color:#666 #222 #111 #555;
+  -webkit-box-shadow:inset 0px -1px 2px rgba(255,255,255,0.4),0 2px 3px rgba(0,0,0,0.4);
+  -moz-box-shadow:inset 0px -1px 2px rgba(255,255,255,0.4),0 2px 3px rgba(0,0,0,0.4);
+  box-shadow:inset 0px -1px 2px rgba(255,255,255,0.4),0 2px 3px rgba(0,0,0,0.4);
+  -webkit-border-radius:0 0 2px 2px;
+  -moz-border-radius:0 0 2px 2px;
+  border-radius:0 0 2px 2px;
+}
+
+.black-keys-hide {
+  display: none;
+}
+
+.mappedKeyWrapper {
+  position: relative;
 }

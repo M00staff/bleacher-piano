@@ -42,16 +42,19 @@ export const Piano = () => {
   return (
     <Fragment>
       <div className="keyWrapper">
-        {pianoKeys.map(x =>
-          <button
-            className="keyButton"
-            key={x}
-            ref={(e) => keyRef.current[x] = e}
-            onClick={(e) => addKeys(x, e)}
-            onAnimationEnd={(e) => e.target.classList.remove("clickedButton")}
-          >
-            {x}
-          </button>)}
+        {pianoKeys.map((x, i) =>
+          <span className="mappedKeyWrapper">
+            <button
+              className="keyButton"
+              key={x}
+              ref={(e) => keyRef.current[x] = e}
+              onClick={(e) => addKeys(x, e)}
+              onAnimationEnd={(e) => e.target.classList.remove("clickedButton")}
+            >
+              {x}
+            </button>
+            <span className={i % 2 === 1 ? "black-keys" : "black-keys-hide"}>x</span>
+          </span>)}
       </div>
       <div className="controlsWrapper">
         <div className="notes">
