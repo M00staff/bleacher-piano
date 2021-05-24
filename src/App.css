@@ -38,3 +38,19 @@
 @keyframes buttonClick {
   0%   {background-color:white;}
 }
+
+.errorWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.error {
+  background-color: red;
+}
+
+.errorButton {
+  border-color: red;
+  background-color: red;
+  cursor: pointer;
+}
